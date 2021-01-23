@@ -16,10 +16,13 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# define BUFFER_SIZE 1
+
 int		get_next_line(int fd, char **line);
-size_t	ft_strlen(const char *str);
-char	*ft_strjoin(char *s1, char const *s2);
-char	*ft_strnjoin(char *s1, char const *s2, size_t pos);
+size_t		ft_strlen(const char *str);
+char		*ft_strjoin(char *s1, char const *s2);
+char		*ft_strnjoin(char *s1, char const *s2, size_t pos);
 int		is_next_line(char *buffer);
-size_t	pos_next_line(char *buffer);
+size_t		pos_next_line(char *buffer);
+
 #endif
