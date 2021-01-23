@@ -34,5 +34,10 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
+	@rm -f test
+
+test: $(NAME)
+	@$(CC) $(CC_FLAGS) -I$(INC_D) -o test tests/main.c $(NAME)
+	@./test
 
 re : fclean all
