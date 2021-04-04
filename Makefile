@@ -1,4 +1,4 @@
-NAME = gnl_lib.a
+NAME = libgnl.a
 
 SRC_D = src
 INC_D = inc
